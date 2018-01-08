@@ -1,0 +1,15 @@
+{
+  "name": "nodeRTC",
+  "version": "0.0.0",
+  "description": "a realtime video streaming app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sourab reddy",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.13.3",
+    "socket.io": "~1.3.7"
+  }
+}
