@@ -5,14 +5,6 @@ var peerId ;
 var width = picasso.width;
 var height = picasso.height;
 
-var audioctx = new  AudioContext();
-var gainNode = audioctx.createGain();
-gainNode.gain.value = 1;
-var filter = audioctx.createBiquadFilter();
-filter.type = 2;
-filter.frequency.value = 5040;
-
-
 navigator.getUserMedia = navigator.getUserMedia||navigator.webkitGetUserMedia||navigator.mozGetUserMedia;
 
 
@@ -27,16 +19,13 @@ $(document).ready(function(){
     if(navigator.getUserMedia){
         navigator.getUserMedia(
             {video:true,audio:true},
+
             function(stream){ 
                 _('myvideo').src = window.URL.createObjectURL(stream);
                 _('myvideo').volume = 0;
                 _('myvideo').play();
-                _('myaudio').src = window.URL.createObjectURL(stream);
-                var audiosrc = audioctx.createMediaElementSource(_('myvideo'));
-                audiosrc.connect(gainNode);
-                gainNode.connect(filter);
-                filter.connect(audioctx.destination);
             },
+
             function(){ console.log("failed!!");}
         );
     }
