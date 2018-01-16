@@ -2,6 +2,8 @@
 
 A video chat that works offline using intranet to help solve the education problem in rural India where transport and other obstacles often hinder the learning opportunities. In these areas network infrastructure is in place but connectivity to the external internet could be an issue. Using Educast the teacher could broadcast his / her video and all students could tune in from their homes.  
 
+Realtime Video :
+
 ![](https://media.giphy.com/media/3oFzmrEv6OWGQYYhVe/giphy.gif)
 
 ### Purpose 
