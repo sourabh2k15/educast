@@ -1,6 +1,6 @@
 # EDUCAST
 
-A video chat that works offline using intranet. 
+A video chat that works offline using intranet to help solve the education problem in rural India where transport and other obstacles often hinder the learning opportunities. In these areas network infrastructure is in place but connectivity to the external internet could be an issue. Using Educast the teacher could broadcast his / her video and all students could tune in from their homes.  
 
 ### Purpose 
 To help solve the education problem in rural areas of India, where network infrastructure exists but internet connectivity is an issue.
@@ -26,4 +26,4 @@ To use it locally on your intranet, follow these steps:
 * the previous step will start the server listening on port 5000, you can access the app by loading `localhost:5000` in your browser, the client can be accessed through `localhost:5000/client.html`
 
 ### TODO
-The broadcasted video is a bit laggy, but efforts are being put in to make it realtime , also a major TODO is to add audio :)
+add audio :)
